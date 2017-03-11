@@ -53,13 +53,13 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
-#DOWNLOADER_MIDDLEWARES = {
-#    'JDspider.middlewares.MyCustomDownloaderMiddleware': 543,
-#}
 DOWNLOADER_MIDDLEWARES = {
-    'JDspider.Middlewares.middleware.JavaScriptMiddleware': 543, #键为中间件类的路径，值为中间件的顺序
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware':None, #禁止内置的中间件
+   'JDspider.MyCustomDownloaderMiddleware.JavaScriptMiddleware': 543,
 }
+# DOWNLOADER_MIDDLEWARES = {
+#     'JDspider.Dmiddlewares.middleware.JavaScriptMiddleware': 543, #键为中间件类的路径，值为中间件的顺序
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware':None, #禁止内置的中间件
+# }
 
 # Enable or disable extensions
 # See http://scrapy.readthedocs.org/en/latest/topics/extensions.html
