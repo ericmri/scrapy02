@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 
-class JdSpider(scrapy.Spider):
+class jd_Spider(scrapy.Spider):
     name = "jd"
     allowed_domains = ["jd.com"]
     start_urls = (
