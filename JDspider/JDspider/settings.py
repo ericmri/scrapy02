@@ -54,7 +54,7 @@ ROBOTSTXT_OBEY = False
 # Enable or disable downloader middlewares
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'JDspider.MyCustomDownloaderMiddleware.JavaScriptMiddleware': 543,
+   'JDspider.dmiddlewares.MyCustomDownloaderMiddleware.JavaScriptMiddleware': 543,
 }
 # DOWNLOADER_MIDDLEWARES = {
 #     'JDspider.Dmiddlewares.middleware.JavaScriptMiddleware': 543, #键为中间件类的路径，值为中间件的顺序
